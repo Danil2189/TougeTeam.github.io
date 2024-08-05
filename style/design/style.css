@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+    width: 100%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4);
+    background-color: rgb(0, 0, 0);
+    
+}
+.card{
+    margin: 1.5em;
+}
+.card img {
+    width: 100%;
+}
+.card>.info{
+    text-align: center;
+    color: aliceblue;
+}
+@media (max-width: 800px){
+    .container{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5);
+    }
+}
+@media (max-width: 600px){
+    .container{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9);
+    }
+    .card{
+        margin-inline: 0.2;
+    }
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: repeat(1);
+    
+    
+    
+    
+}
+h1 {
+    text-align: center;
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+    color: aliceblue;
+    margin: 1em;
+    font-size: 100px;
+}
+.left-bar {
+    text-align: right;
+    
+}
+body {
+    background-image: url('complex-geom.png');
+    background-size: 41px;
+    
+}
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(animeacev05.otf); /* Путь к файлу со шрифтом */
+   }
+   
+   body {
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+   }
+.Two{
+    margin: 3em;
+    padding: 20;
+    text-align: center;
+    color: aliceblue;
+    
+
+
+}
+
